@@ -1,81 +1,97 @@
-* {
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Header */
 header {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+    color: white;
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
 }
 
-nav ul {
+.nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-nav ul li a {
+.nav ul li a {
     color: white;
-    text-decoration: none;
-    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    transition: color 0.3s;
 }
 
-/* Hero section */
+.nav ul li a:hover {
+    color: #ff4757;
+}
+
+/* Hero Section */
 .hero {
-    background-color: #444;
-    color: white;
+    background: url('images/motorcycle-hero.jpg') center/cover no-repeat;
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
+    color: rgb(58, 95, 188);
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
-/* Categories section */
+/* Categories Section */
 .categories {
     display: flex;
     justify-content: space-around;
-    padding: 40px 20px;
+    padding: 40px;
 }
 
-.category {
+.category-card {
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
     text-align: center;
 }
 
-.category img {
-    width: 150px;
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-card img {
+    width: 100%;
     height: auto;
 }
 
-.category h3 {
-    margin-top: 10px;
-    font-size: 18px;
+.category-card h3 {
+    padding: 20px;
+    font-weight: 600;
+    color: #333;
 }
 
-.category p {
-    margin-top: 5px;
-    font-size: 16px;
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
