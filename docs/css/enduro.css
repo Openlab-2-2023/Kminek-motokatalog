@@ -52,12 +52,19 @@ nav ul li a {
     padding: 15px;
     width: 200px;
     text-align: center;
+    
 }
 
 .bike img {
     max-width: 100%;
     border-radius: 5px;
 }
+
+.bike a {
+    color: #333; /* Zmena farby textu na tmavú */
+    text-decoration: none; /* Odstránenie podčiarknutia */
+}
+
 
 footer {
     text-align: center;

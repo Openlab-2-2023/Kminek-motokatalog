@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enduro Model 1 Details</title>
+    <link rel="stylesheet" href="css/motorcycle-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="enduro.html">Back to Enduro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bike-details">
+            <h1>Enduro Model 4</h1>
+            <img id="mainImage" src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_RE_TE-150-US-MY25-90-right_%23SALL_%23AEPI_%23V1.jpg" alt="Enduro Model 1" class="main-image">
+
+            <div class="gallery">
+                <img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_RE_TE-150-US-MY25-90-right_%23SALL_%23AEPI_%23V1.jpg" alt="Image 1" onclick="changeMainImage(this.src)">
+                <img src="https://example.com/other-image-2.jpg" alt="Image 2" onclick="changeMainImage(this.src)">
+                <img src="https://example.com/other-image-3.jpg" alt="Image 3" onclick="changeMainImage(this.src)">
+                <img src="https://example.com/other-image-4.jpg" alt="Image 4" onclick="changeMainImage(this.src)">
+            </div>
+
+            <p><strong>Specifications:</strong> This model features a robust frame, a high-capacity engine, and superior off-road capabilities.</p>
+            <p><strong>Features:</strong> Advanced suspension system, lightweight build, and easy maneuverability.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Motorcycle Shop</p>
+    </footer>
+</body>
+</html>

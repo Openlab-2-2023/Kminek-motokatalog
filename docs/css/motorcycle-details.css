@@ -1,0 +1,70 @@
+/* Základné štýly */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigácia */
+header nav {
+    background-color: #222;
+    padding: 1rem;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+header nav a {
+    color: #fff; /* Biela farba pre odkazy */
+    text-decoration: none; /* Odstránenie podčiarknutia */
+    font-weight: 600;
+}
+header nav a:hover {
+    color: #aaa; /* Svetlejšia farba na hover */
+}
+
+/* Detaily motorky */
+.bike-details {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+.bike-details h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Hlavný obrázok */
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+/* Galéria */
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.gallery img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+.gallery img:hover {
+    border: 2px solid #555;
+}
