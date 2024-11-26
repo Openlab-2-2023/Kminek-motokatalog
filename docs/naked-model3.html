@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enduro Model 4 Details</title>
+    <link rel="stylesheet" href="css/motorcycle-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="naked.html">Back to Naked </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bike-details">
+            <h1></h1>
+            <img id="mainImage" src="" alt="Enduro Model 1" class="main-image">
+
+            <div class="gallery">
+                <img src="" alt="Image 1" onclick="changeMainImage(this.src)">
+                <img src="" alt="Image 2" onclick="changeMainImage(this.src)">
+                <img src="" alt="Image 3" onclick="changeMainImage(this.src)">
+            </div>
+
+            <p><strong>Specifications:</strong> This model features a robust frame, a high-capacity engine, and superior off-road capabilities.</p>
+            <p><strong>Features:</strong> Advanced suspension system, lightweight build, and easy maneuverability.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Motorcycle Shop</p>
+    </footer>
+</body>
+</html>
