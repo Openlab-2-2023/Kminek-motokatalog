@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Enduro Motorcycles</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="enduro.html">Enduro</a></li>
+                <li><a href="naked.html">Naked</a></li>
+                <li><a href="supersport.html">SuperSport</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>If you have any questions, suggestions, or inquiries, feel free to reach out to us. We're here to help!</p>
+
+                <div class="contact-grid">
+                    <!-- Kontaktný formulár -->
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form action="process_form.php" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"  placeholder="Your email address">
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"  placeholder="Your message"></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Kontaktné údaje -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p><strong>Email:</strong> <a href="mailto:info@enduro-motorcycles.com">info@enduro-motorcycles.com</a></p>
+                        <p><strong>Phone:</strong> +421 123 456 789</p>
+                        <p><strong>Address:</strong> 123 Motorbike Avenue, Bratislava, Slovakia</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

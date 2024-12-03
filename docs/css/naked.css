@@ -1,57 +1,68 @@
-
+/* Video na pozadí */
 .background-video {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; 
-    z-index: -1; 
+    object-fit: cover;
+    z-index: -1;
 }
 
-
+/* Globálne štýly */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: transparent; 
-    color: #000000; 
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
+    background-color: transparent;
+    color: #000000;
+    min-height: 100vh;
+    padding-top: 60px; 
 }
 
-
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    color: rgb(0, 0, 0);
-    position: relative;
-    z-index: 1;
+    background-color: #2c2c2c;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigačné menu */
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #000000;
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #ff6f00;
+}
 
+/* Sekcia motocyklov */
 .motorcycles {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
     padding: 20px;
+    gap: 20px; 
     position: relative;
     z-index: 1;
 }
@@ -60,19 +71,74 @@ nav ul li a {
     background: rgb(255, 255, 255);
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px;
     padding: 15px;
-    width: 200px;
+    width: 300px; 
+    max-width: 100%; 
     text-align: center;
     color: #333;
+    transition: transform 0.3s;
+}
+
+.bike:hover {
+    transform: translateY(-5px); 
 }
 
 .bike img {
     max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
+.bike h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.bike p {
+    font-size: 16px;
+    color: #666;
+}
+
 .bike a {
-    color: #333; 
+    color: #333;
     text-decoration: none;
+}
+
+/* Responzívne nastavenia */
+
+/* Tablety (maximálna šírka 768px) */
+@media (max-width: 768px) {
+    .motorcycles {
+        gap: 15px;
+    }
+
+    .bike {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-wrap: wrap; 
+    }
+}
+
+/* Mobilné zariadenia (maximálna šírka 480px) */
+@media (max-width: 480px) {
+    .bike {
+        width: 100%; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .background-video {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
 }

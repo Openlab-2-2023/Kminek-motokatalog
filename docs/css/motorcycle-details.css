@@ -6,26 +6,42 @@ body {
     box-sizing: border-box;
     background-color: #f4f4f9;
     color: #333;
+    padding-top: 60px;
 }
 
 /* Navigácia */
-header nav {
-    background-color: #222;
-    padding: 1rem;
+header {
+    background-color: #2c2c2c;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-header nav ul {
+
+nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
-header nav a {
-    color: #fff; /* Biela farba pre odkazy */
-    text-decoration: none; /* Odstránenie podčiarknutia */
-    font-weight: 600;
+
+nav ul li {
+    margin: 0 15px;
 }
-header nav a:hover {
-    color: #aaa; /* Svetlejšia farba na hover */
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f00;
 }
 
 /* Detaily motorky */
@@ -57,9 +73,9 @@ header nav a:hover {
     justify-content: center;
 }
 .gallery img {
-    width: 150px; /* Štandardná šírka pre všetky obrázky */
-    height: 100px; /* Štandardná výška pre všetky obrázky */
-    object-fit: cover; /* Obrázky budú orezané tak, aby zaplnili určený priestor */
+    width: 150px; 
+    height: 100px;  
+    object-fit: cover; 
     border: 2px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
@@ -67,5 +83,5 @@ header nav a:hover {
 }
 .gallery img:hover {
     border: 2px solid #555;
-    transform: scale(1.1); /* Jemné zväčšenie na hover */
+    transform: scale(1.1); 
 }
