@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Enduro Motorcycles</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header -->
     <header>
         <nav>
@@ -25,38 +23,28 @@
     <!-- Main Content -->
     <main>
         <section class="contact-section">
-            <div class="contact-container">
-                <h1>Contact Us</h1>
-                <p>If you have any questions, suggestions, or inquiries, feel free to reach out to us. We're here to help!</p>
+            <h1>Contact Us</h1>
+            <p>Write us a message or reach out via email or phone.</p>
 
-                <div class="contact-grid">
-                    <!-- Kontaktný formulár -->
-                    <div class="contact-form">
-                        <h2>Send Us a Message</h2>
-                        <form action="process_form.php" method="POST">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name">
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
 
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email"  placeholder="Your email address">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
 
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5"  placeholder="Your message"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
 
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </div>
-
-                    <!-- Kontaktné údaje -->
-                    <div class="contact-info">
-                        <h2>Contact Information</h2>
-                        <p><strong>Email:</strong> <a href="mailto:info@enduro-motorcycles.com">info@enduro-motorcycles.com</a></p>
-                        <p><strong>Phone:</strong> +421 123 456 789</p>
-                    </div>
-                    
-                </div>
-            </div>
+                <button type="button" onclick="handleSubmit()">Send</button>
+            </form>
         </section>
     </main>
+
+    <script>
+        function handleSubmit() {
+            alert("Message sent! Thank you for contacting us.");
+        }
+    </script>
 </body>
 </html>
