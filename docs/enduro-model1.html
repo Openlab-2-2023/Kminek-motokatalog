@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enduro Model 1 Details</title>
     <link rel="stylesheet" href="css/motorcycle-details.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script>
         function changeMainImage(src) {
             document.getElementById('mainImage').src = src;
@@ -25,53 +25,44 @@
     <main>
         <section class="bike-details">
             <h1>Husqvarna TE 150</h1>
-            <div class="image-container">
-                <!-- Gallery -->
-                <div class="gallery">
-                    <img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_RE_TE-150-US-MY25-90-right_%23SALL_%23AEPI_%23V1.jpg" alt="Image 1" onclick="changeMainImage(this.src)">
-                    <img src="https://www.husqvarna-moto.sk/upload/enduro/te-150/05.jpg" alt="Image 2" onclick="changeMainImage(this.src)">
-                    <img src="https://www.husqvarna-moto.sk/upload/enduro/te-150/03.jpg" alt="Image 3" onclick="changeMainImage(this.src)">
-                </div>
+            <img id="mainImage" 
+                 src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_RE_TE-150-US-MY25-90-right_%23SALL_%23AEPI_%23V1.jpg" 
+                 alt="Husqvarna TE 150" class="main-image">
 
-                <!-- Main Image -->
-                <img id="mainImage" src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_RE_TE-150-US-MY25-90-right_%23SALL_%23AEPI_%23V1.jpg" alt="Enduro Model 1" class="main-image">
+            <div class="gallery">
+                <img src="https://azwecdnepstoragewebsiteuploads.azureedge.net/PHO_BIKE_90_RE_TE-150-US-MY25-90-right_%23SALL_%23AEPI_%23V1.jpg" 
+                     alt="Image 1" onclick="changeMainImage(this.src)">
+                <img src="https://www.husqvarna-moto.sk/upload/enduro/te-150/05.jpg" 
+                     alt="Image 2" onclick="changeMainImage(this.src)">
+                <img src="https://www.husqvarna-moto.sk/upload/enduro/te-150/03.jpg" 
+                     alt="Image 3" onclick="changeMainImage(this.src)">
             </div>
+
+            <p><strong>Description:</strong> The Husqvarna TE 150 is a lightweight, agile dirt bike designed for off-road enthusiasts. Its advanced engineering ensures durability and performance even in the toughest terrains.</p>
+            <p><strong>Specifications:</strong></p>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Engine Type</td>
+                    <td>2-Stroke</td>
+                </tr>
+                <tr>
+                    <td>Displacement</td>
+                    <td>150cc</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>104 kg</td>
+                </tr>
+                <tr>
+                    <td>Fuel Tank Capacity</td>
+                    <td>8 liters</td>
+                </tr>
+            </table>
         </section>
-
-        <section class="info-section">
-            <div class="info-box">
-                <h2>Description</h2>
-                <p>The Husqvarna TE 150 is a lightweight, agile dirt bike designed for off-road enthusiasts. Its advanced engineering ensures durability and performance even in the toughest terrains.</p>
-            </div>
-            <div class="specs-box">
-                <h2>Specifications</h2>
-                <table>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Details</th>
-                    </tr>
-                    <tr>
-                        <td>Engine Type</td>
-                        <td>2-Stroke</td>
-                    </tr>
-                    <tr>
-                        <td>Displacement</td>
-                        <td>150cc</td>
-                    </tr>
-                    <tr>
-                        <td>Weight</td>
-                        <td>104 kg</td>
-                    </tr>
-                    <tr>
-                        <td>Fuel Tank Capacity</td>
-                        <td>8 liters</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-
     </main>
-
 </body>
 </html>
