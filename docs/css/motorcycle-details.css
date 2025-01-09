@@ -95,7 +95,7 @@ nav ul li a:hover {
 /* Table Styling */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-spacing: 0 10px; /* Add spacing between rows */
     margin-top: 1rem;
 }
 
@@ -108,4 +108,9 @@ th, td {
 th {
     font-weight: bold;
     background-color: #f9f9f9;
+}
+
+/* Optional: Add styles to ensure proper spacing and readability in the table */
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly alternate row background */
 }
