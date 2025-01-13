@@ -38,6 +38,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    position: relative; 
 }
 
 nav ul li a {
@@ -50,6 +51,27 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff6f00;
+}
+
+/* Ikona motorky */
+.bike-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://icon-library.com/images/motorcycle-icon-png/motorcycle-icon-png-28.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: -30px; 
+    transform: translateY(-50%);
+    opacity: 0; 
+    transition: opacity 0.5s, left 0.5s; 
+}
+
+
+nav ul li a:hover .bike-icon {
+    opacity: 1;
+    
 }
 
 /* Kategórie */
@@ -86,7 +108,7 @@ nav ul li a:hover {
     font-weight: 600;
     color: #333;
 }
-/* Sekcia Najobľúbenejšie Motocykle */
+
 .popular-bikes {
     padding: 40px;
     background-color: #fff;
@@ -116,7 +138,8 @@ nav ul li a:hover {
     transition: transform 0.3s ease-in-out;
     background-color: white;
 }
-.bike-card:hover{
+
+.bike-card:hover {
     transform: translateY(-10px);
 }
 
@@ -125,7 +148,6 @@ nav ul li a:hover {
     height: 200px; 
     object-fit: cover; 
 }
-
 
 .bike-card h3 {
     font-size: 20px;
@@ -139,9 +161,8 @@ nav ul li a:hover {
     padding: 0 15px 15px;
 }
 
-/* Responzívne nastavenia */
 
-/* Tablety a menšie obrazovky */
+
 @media (max-width: 768px) {
     .categories {
         gap: 15px; 
