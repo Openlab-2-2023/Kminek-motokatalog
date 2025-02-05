@@ -35,3 +35,26 @@ function najdiVyskytZnaku(text, znak) {
 
 
 console.log("Cvičenie 3. - " + najdiVyskytZnaku("jozo", "o"));
+
+function hangman(word, attempts) {
+    let hidden = "_".repeat(word.length);
+    
+    while (attempts > 0 && hidden.includes("_")) {
+        let guess = prompt(`Slovo: ${hidden}\nHádaj písmeno:`);
+        
+        if (word.includes(guess)) {
+            for (let i = 0; i < word.length; i++) {
+                if (word[i] === guess) {
+                    hidden = hidden.substring(0, i) + guess + hidden.substring(i + 1);
+                }
+            }
+        } else {
+            attempts--;
+            alert(`Zle! Ostáva ${attempts} pokusov.`);
+        }
+    }
+    
+    alert(hidden.includes("_") ? `Prehral si! Slovo bolo: ${word}` : `Vyhral si!`);
+}
+console.log(hangman("jadjsasd", "1"))
+
